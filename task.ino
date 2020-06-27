@@ -43,7 +43,7 @@ void setup() {
     
   JsonArray student_id = doc["student_id"];
   id = student_id[num-1]["num"];
-  Serial.println("Enter the number: ");
+ 
 }
 
 void loop() {
@@ -51,10 +51,11 @@ void loop() {
 
 void  task1(void *param){
    for(;;){
-   
+   Serial.println("Enter the number: ");
   while(Serial.available() == 0){
    num = Serial.read();
   Serial.println(id);
+  delay(5000);
    }
   }
 }
