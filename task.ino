@@ -9,8 +9,8 @@ int num;
 const char* id
 
 
-const char* ssid = "Rotomi";
-const char* password = "byebyestranger";
+const char* ssid = "";
+const char* password = "";
 
 
 TaskHandle_t Task_Handle1;
